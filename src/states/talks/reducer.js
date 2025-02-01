@@ -16,6 +16,7 @@ function talksReducer(talks = [], action = {}) {
             : talk.likes.concat([action.payload.userId])
         };
       }
+      return talk;
     });
   default:
     return talks;
