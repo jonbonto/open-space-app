@@ -5,6 +5,7 @@ import isPreloadReducer from './isPreload/reducer';
 import talkDetailReducer from './talkDetail/reducer';
 import talksReducer from './talks/reducer';
 import usersReducer from './users/reducer';
+import { loadingBarReducer } from 'react-redux-loading-bar';
 
 const store = configureStore({
   reducer: {
@@ -12,7 +13,8 @@ const store = configureStore({
     isPreload: isPreloadReducer,
     users: usersReducer,
     talks: talksReducer,
-    talkDetail: talkDetailReducer
+    talkDetail: talkDetailReducer,
+    loadingBar: loadingBarReducer
   }
 });
 
